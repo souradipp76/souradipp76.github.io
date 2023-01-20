@@ -3915,7 +3915,7 @@ input, select, textarea {
 
 		}
 
-.container {
+.container_img {
 	display: flex;
 
 	/* OPTIONAL: Reverse the order of image and content */
@@ -3935,4 +3935,9 @@ input, select, textarea {
 .container__feature {
 	/* Take the remaining width */
 	flex: 1;
+}
+
+.container {
+	float: left;
+	width: 100%
 }
