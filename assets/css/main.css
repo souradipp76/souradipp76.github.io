@@ -3982,11 +3982,11 @@ input, select, textarea {
     width: 300px;
     height: 300px;
 	border-radius: 2%;
+	object-fit: contain;
 }
 
 .content-container {
     flex: 2;
-	max-width: 50%;
 }
 
 .content-container h2 {
