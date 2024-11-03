@@ -3966,19 +3966,19 @@ input, select, textarea {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     max-width: 100%;
     margin: 20px;
+	align-items: center;
 }
 
 .image-container {
 	flex: 1;
     max-width: 50%;
-    margin-right: 20px;
-	margin-top: 20px;
     display: flex;
     align-items: center;
-    justify-content: left;
+    justify-content: center;
 }
 
 .image-container img {
+	flex: 1;
     width: 300px;
     height: 300px;
 	border-radius: 2%;
@@ -3987,6 +3987,11 @@ input, select, textarea {
 
 .content-container {
     flex: 2;
+}
+
+.content {
+    margin-top: 20px;
+	margin-bottom: 20px;
 }
 
 .content-container h2 {
