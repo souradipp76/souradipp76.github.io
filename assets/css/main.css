@@ -22,7 +22,7 @@ section, summary, time, mark, audio, video, button{
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-	font-family: "Josefin Sans", sans-serif;
+	font-family: "Open Sans", sans-serif;
 	vertical-align: baseline;}
 
 article, aside, details, figcaption, figure,
@@ -3987,6 +3987,11 @@ input, select, textarea {
 
 .content-container {
     flex: 2;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-top: 3%;
+	margin-left: 3%;
 }
 
 .content {
