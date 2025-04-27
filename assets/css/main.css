@@ -22,7 +22,7 @@ section, summary, time, mark, audio, video, button{
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-	font-family: "Open Sans", sans-serif;
+	font-family: "Raleway", sans-serif;
 	vertical-align: baseline;}
 
 article, aside, details, figcaption, figure,
@@ -2563,7 +2563,7 @@ input, select, textarea {
 /* Image */
 
 	.image {
-		border-radius: 0.25em;
+		border-radius: 2%;
 		border: 0;
 		display: inline-block;
 		position: relative;
@@ -2603,6 +2603,12 @@ input, select, textarea {
 			.image.fit img {
 				width: 100%;
 			}
+
+		.image.half {
+			display: block;
+			margin: 0 0 2em 0;
+			width: 50%;
+		}
 
 		.image.main {
 			display: block;
@@ -3980,7 +3986,6 @@ input, select, textarea {
 .image-container img {
 	flex: 1;
     width: 300px;
-    height: 300px;
 	border-radius: 2%;
 	object-fit: contain;
 }
