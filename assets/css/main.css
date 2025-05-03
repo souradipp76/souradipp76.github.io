@@ -2607,7 +2607,7 @@ input, select, textarea {
 		.image.half {
 			display: block;
 			margin: 0 0 2em 0;
-			width: 50%;
+			width: 70%;
 		}
 
 		.image.main {
@@ -3816,7 +3816,7 @@ input, select, textarea {
 		@media screen and (max-width: 1280px) {
 
 			#sidebar {
-				height: 3.5em;
+				height: 15em;
 				left: 0;
 				line-height: 3.5em;
 				overflow: hidden;
@@ -3950,43 +3950,58 @@ input, select, textarea {
 
 .info_container {
 	display: flex; 
+	flex: 1;
 	align-items: center; 
 	justify-content: start; 
-	width: 70%;
 	margin-right: 10px;
 }
 
 .img_container {
-	display: flex; 
+	display: flex;
 	align-items: center; 
 	justify-content: center; 
-	width: 30%;
 	margin-left: 10px;
 	margin-right: 10px;
 }
 
+.img_container img {
+	flex:1;
+	width: 70%;
+	height: auto;
+	border-radius: 0.25em;
+	margin: 2%;
+}
+
 .row_container {
     display: flex;
-    align-items: flex-start;
     padding: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     max-width: 100%;
     margin: 20px;
 	align-items: center;
+	flex-wrap: wrap;
+	justify-content: space-around;
 }
 
+.row2_container {
+    display: flex;
+    align-items: center;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+
 .image-container {
-	flex: 1;
-    max-width: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
+	max-width: 300px;
 }
 
 .image-container img {
-    height: 300px;
+	flex: 1;
+    max-width: 80%;
 	border-radius: 2%;
-	object-fit: contain;
 }
 
 .content-container {
