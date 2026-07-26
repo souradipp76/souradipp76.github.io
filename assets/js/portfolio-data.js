@@ -10,6 +10,7 @@ window.PORTFOLIO_DATA = {
 		{ id: 'tp-chaos-generator', repo: 'tp_chaos_generator' },
 		{ id: 'budget-constrained-rlrs', repo: 'Budget-Constrained-RLRS' },
 		{ id: 'mm-poe', repo: 'MM-PoE' },
-		{ id: 'readmeready', repo: 'ReadMeReady' }
+		{ id: 'readmeready', repo: 'ReadMeReady' },
+		{ id: 'deepseek-hft', repo: 'DeepSeek-HFT', githubUser: 'hellokayas' }
 	]
 };

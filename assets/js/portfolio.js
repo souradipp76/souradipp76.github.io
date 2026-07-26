@@ -20,7 +20,8 @@
 	}
 
 	data.featuredProjects.forEach(function (item) {
-		fetch('https://api.github.com/repos/' + data.githubUser + '/' + item.repo, { headers: { Accept: 'application/vnd.github+json' } })
+		const githubUser = item.githubUser || data.githubUser;
+		fetch("https://api.github.com/repos/" + githubUser + "/" + item.repo, { headers: { Accept: "application/vnd.github+json" } })
 			.then(function (response) { return response.ok ? response.json() : Promise.reject(response.status); })
 			.then(function (repository) {
 				projectMeta({ id: item.id, stargazers_count: repository.stargazers_count, language: repository.language, updated_at: repository.updated_at });
