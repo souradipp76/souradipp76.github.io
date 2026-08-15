@@ -11,6 +11,7 @@ window.PORTFOLIO_DATA = {
 		{ id: 'budget-constrained-rlrs', repo: 'Budget-Constrained-RLRS' },
 		{ id: 'mm-poe', repo: 'MM-PoE' },
 		{ id: 'readmeready', repo: 'ReadMeReady' },
-		{ id: 'deepseek-hft', repo: 'DeepSeek-HFT', githubUser: 'hellokayas' }
+		{ id: 'deepseek-hft', repo: 'DeepSeek-HFT', githubUser: 'hellokayas' },
+		{ id: 'pixrec', repo: 'PixRec' }
 	]
 };
