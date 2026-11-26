@@ -1,0 +1,50 @@
+/* Project previews are contained once, not used as repeating background texture. */
+#projects.spotlights > .project-card {
+	min-height: 0;
+}
+
+#projects.spotlights > .project-card > .image {
+	background-color: #d8e2ec;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	flex: 0 0 clamp(15rem, 28vw, 22rem);
+	overflow: hidden;
+	width: clamp(15rem, 28vw, 22rem);
+}
+
+#projects.spotlights > .project-card > .image img {
+	display: block;
+	height: 100%;
+	max-height: none;
+	object-fit: cover;
+	object-position: center;
+	width: 100%;
+}
+
+#projects.spotlights > .project-card > .content {
+	padding: 2.75rem 3.5rem 2.5rem;
+}
+
+#projects.spotlights > .project-card > .content > .inner {
+	padding: 0;
+}
+
+#projects.spotlights > .project-card h2 {
+	font-size: clamp(1.8rem, 2.7vw, 2.8rem);
+}
+
+@media screen and (max-width: 980px) {
+	#projects.spotlights > .project-card > .image {
+		height: clamp(13rem, 30vw, 18rem);
+		width: 100%;
+	}
+
+	#projects.spotlights > .project-card > .image img { max-height: none; }
+	#projects.spotlights > .project-card > .content { padding: 2.5rem 2rem; }
+}
+
+@media screen and (max-width: 736px) {
+	#projects.spotlights > .project-card > .image { height: 13rem; min-height: 0; }
+	#projects.spotlights > .project-card > .content { padding: 2rem 1.5rem 2.5rem; }
+}
