@@ -1,0 +1,21 @@
+/* Research summaries occupy the available reading column, then wrap naturally. */
+#research [data-project] {
+	max-inline-size: 100%;
+	width: fit-content;
+}
+
+#research [data-project] h3 {
+	display: inline-block;
+	max-inline-size: 100%;
+}
+
+#research .research-description {
+	display: block;
+	inline-size: 100%;
+	max-inline-size: none;
+	max-width: 100%;
+}
+
+@media screen and (max-width: 736px) {
+	#research [data-project] { max-inline-size: 100%; }
+}

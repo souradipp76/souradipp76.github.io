@@ -1,0 +1,23 @@
+/* A longer statement needs a deliberately narrow reading column. */
+#intro .inner {
+	padding-bottom: clamp(6rem, 12vh, 9.5rem);
+	padding-top: clamp(6rem, 12vh, 9.5rem);
+}
+
+#intro h1 {
+	margin-bottom: 1.15rem;
+	max-width: 11ch;
+}
+
+#intro p:not(.eyebrow) {
+	margin-bottom: 2.25rem;
+}
+
+@media screen and (max-width: 736px) {
+	#intro .inner {
+		padding-bottom: 6rem;
+		padding-top: 6rem;
+	}
+
+	#intro h1 { max-width: 12ch; }
+}

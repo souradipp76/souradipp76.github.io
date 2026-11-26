@@ -10,7 +10,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<meta name="description" content="Portfolio of Souradip Pal, a software engineer building AI, machine-learning, cloud, and industrial IoT applications." />
-		<meta name="theme-color" content="#312450" />
+		<meta name="theme-color" content="#0a0a0b" />
 		<link rel="canonical" href="https://souradipp76.github.io/" />
 		<meta property="og:type" content="website" />
 		<meta property="og:url" content="https://souradipp76.github.io/" />
@@ -23,13 +23,37 @@
 		<meta name="twitter:image" content="https://souradipp76.github.io/images/image_avatar.jpg" />
 		<link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/portfolio.css" />
+		<link rel="stylesheet" href="assets/css/hero-spacing.css" />
+		<link rel="stylesheet" href="assets/css/projects-layout.css" />
+		<link rel="stylesheet" href="assets/css/research-layout.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 		<link rel="stylesheet" href="assets/css/fontawesome-all.min.css" />
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/devicon.min.css">
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+		<style>
+			#education { background: linear-gradient(135deg, #163a59 0%, #1b496b 58%, #102a43 100%) !important; }
+			#experience { background: linear-gradient(135deg, #183d57 0%, #245675 56%, #102a43 100%) !important; }
+			#research { background-color: #153b50 !important; background-image: linear-gradient(rgba(255,255,255,.055) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.055) 1px, transparent 1px); background-size: 32px 32px; }
+			#projects { background-color: #102a43 !important; background-image: linear-gradient(rgba(255,255,255,.045) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.045) 1px, transparent 1px), linear-gradient(135deg, #102a43 0%, #1b496b 56%, #163a59 100%) !important; background-size: 36px 36px, 36px 36px, auto; }
+			#skills { background-color: #183d57 !important; background-image: radial-gradient(rgba(232,107,58,.3) 1px, transparent 1px); background-size: 24px 24px; }
+			#education, #experience, #research, #projects, #skills { color: #f9fbfc; }
+			#education h2, #education h3, #education h4, #education p, #experience h2, #experience h3, #experience h4, #experience p, #research h2, #research h3, #research p, #projects h2, #projects h3, #projects p, #skills h2, #skills h3 { color: #f9fbfc; }
+			#education strong, #education b, #experience strong, #experience b, #research strong, #research b, #projects strong, #projects b, #skills strong, #skills b { color: #ffffff; }
+			#experience .info_container, #experience .github-meta, #research .github-meta { color: #d7e5ee; }
+			#education .course-chips li { background: rgba(255,255,255,.1); border-color: rgba(255,255,255,.35); color: #f9fbfc; }
+			#contact a, #contact .contact li, #contact .contact li h3 { color: #f9fbfc; }
+			#projects .project-card { background: rgba(255,255,255,.08); border-top: 1px solid rgba(255,255,255,.18); color: #f9fbfc; }
+			#projects .project-card h2, #projects .project-card p { color: #f9fbfc; }
+			#projects .project-card .image { background-color: #1b496b; }
+			#experience .experience-header { align-items: baseline; display: grid; gap: 1rem; grid-template-columns: minmax(0, 1fr) auto; }
+			#experience .experience-header h3, #experience .experience-header h4 { margin: 0; }
+			#experience .experience-header h4 { border: 1px solid rgba(232,107,58,.65); border-radius: 999px; color: #ffd8c9; padding: .25rem .7rem; text-align: right; white-space: nowrap; }
+			@media screen and (max-width: 736px) { #experience .experience-header { grid-template-columns: 1fr; } #experience .experience-header h4 { justify-self: start; text-align: left; } }
+		</style>
 	</head>
 	<body class="is-preload">
 		<a class="skip-link" href="#main-content">Skip to main content</a>
@@ -38,11 +62,11 @@
 		<section id="sidebar">
 			<div class="inner">
 				<nav aria-label="Section navigation">
-					<div id="logo" style="margin-top: 2%;">
-						<span class="image avatar48"><img width="125" height="125" style="border-radius: 50%;" src="images/image_avatar.jpg" alt="Portrait of Souradip Pal" /></span>
+					<div id="logo" style="margin-top: 2%; text-align: center;">
+						<span class="image avatar48"><img width="125" height="125" style="border-radius: 50%; display: block; height: 125px !important; margin: 0 auto; width: 125px !important;" src="images/image_avatar.jpg" alt="Portrait of Souradip Pal" /></span>
 					</div>
 					<ul>						
-						<li><a href="#intro"><span style="float: left;"><i class="material-icons">person</i></span>About Me</a></li>
+						<li><a href="#intro"><span style="float: left;"><i class="material-icons">person</i></span>About</a></li>
 						<li><a href="#education"><span style="float: left;"><i class="material-icons">school</i></span>Education</a></li>
 						<li><a href="#experience"><span style="float: left;"><i class="material-icons">trending_up</i></span>Experience</a></li>
 						<li><a href="#research"><span style="float: left;"><i class="material-icons">description</i></span>Research</a></li>
@@ -61,8 +85,8 @@
 			<!-- Intro -->
 			<section id="intro" class="wrapper style1 fullscreen fade-up">
 				<div class="inner">
-					<h1>Hi, I am Souradip !!</h1>
-					<p>I am working as a Software Engineer II at SLB in the Industrial IoT Applications team. I completed my master's in Electrical and Computer Engineer from Purdue University (West Lafayette) 
+					<h1>Building thoughtful software for complex problems.</h1>
+					<p>Hi, I am Souradip!! I am working as a Software Engineer II at SLB in the Industrial IoT Applications team. I completed my master's in Electrical and Computer Engineer from Purdue University (West Lafayette) 
 						in 2024 with a focus on Artificial Intelligence. Earlier, I did my bachelor's from Indian Institute of Technology Guwahati in 2019 majoring in 
 						Electronics and Communication Engineering. My passion is Computer Science. I am currently interested in building full-stack ML applications and software solutions involving
 						Deep Learning, Generative AI, Agentic AI, LLMs, Cloud Computing and Optimization. Previously, I have worked as a software developer at Adobe Inc. India in the 
@@ -128,7 +152,7 @@
 						<div class="content">
 							<div class="experience-header">
 								<h3>Software Engineer - SLB (Schlumberger)</h3>
-								<h4>(June 2024 - Present)</h4>
+								<h4>June 2024 - Present</h4>
 							</div>
 							<div class="row2_container">
 								<div class="info_container">
@@ -145,7 +169,7 @@
 					<div class="content">
 						<div class="experience-header">
 							<h3>Software Engineering Intern - SLB (Schlumberger)</h3>
-							<h4>(May 2023 - August 2023)</h4>
+							<h4>May 2023 - August 2023</h4>
 						</div>
 						<div class="row2_container">
 							<div class="info_container">
@@ -165,7 +189,7 @@
 						<div class="content">
 							<div class="experience-header">
 								<h3>Software Development Engineer - Adobe Inc. India</h3>
-								<h4>(July 2019 - July 2022)</h4>
+								<h4>July 2019 - July 2022</h4>
 							</div>
 							<div class="row2_container">
 								<div class="info_container">
@@ -187,7 +211,7 @@
 						<div class="content">
 							<div class="experience-header">
 								<h3>Summer Research Intern - Samsung R&D Institute India</h3>
-								<h4>(May 2018 - July 2018)</h4>
+								<h4>May 2018 - July 2018</h4>
 							</div>
 							<div class="row2_container">
 								<div class="info_container">
@@ -208,7 +232,7 @@
 						<div class="content">
 							<div class="experience-header">
 								<h3>Summer Fellowship - FOSSEE, IIT Bombay </h3>
-								<h4>(May 2017 - July 2017)</h4>
+								<h4>May 2017 - July 2017</h4>
 							</div>
 							<div class="row2_container">
 								<div class="info_container">
@@ -235,14 +259,14 @@
 					<h2>Research</h2>
 					<div data-project="pixrec">
 						<h3>PixRec: Leveraging Visual Context for Next-Item Prediction in Sequential Recommendation</h3>
-						<p>
+						<p class="research-description">
 							<b>Author(s)</b>: Sayak Chakrabarty, Souradip Pal<br>
 							This research proposes PixRec, a vision-language framework that incorporates both textual
 							attributes and product images into sequential recommendation. The architecture leverages a
 							vision-language model backbone capable of jointly processing image-text sequences, maintaining
 							a dual-tower structure and mixed training objective while aligning multi-modal feature
 							projections for both item-item and user-item interactions. Using the Amazon Reviews dataset
-							augmented with product images, experiments demonstrate 3× and 40% improvements in top-rank and
+							augmented with product images, experiments demonstrate 3x and 40% improvements in top-rank and
 							top-10 rank accuracy over text-only recommenders, indicating that visual features help
 							distinguish items with similar textual descriptions. The work outlines future directions for
 							scaling multi-modal recommender training, enhancing visual-text feature fusion, and evaluating
@@ -261,7 +285,7 @@
 					</div>
 					<div data-project="deepseek-hft">
 						<h3>DeepSeekMath Meets Order Book: Group-Aware Policy Optimization for High-Frequency Directional Trading</h3>
-						<p>
+						<p class="research-description">
 							<b>Author(s)</b>: Sayak Chakrabarty, Souradip Pal<br>
 							This research investigates reinforcement learning for high-frequency trading on limit order books. It pairs an Order-Flow-based state model with policy-gradient methods. Moving beyond value-based RL techniques, the study introduces policy-based methods including vanilla PPO and DeepSeekMath-inspired variants (such as GRPO and GSPO) that leverage group-normalized updates and downside-aware shaping. Backtesting on major financial assets like AMZN, AAPL, and GOOG demonstrates that these group-aware policies deliver significant improvements in net average PnL, profitability, and maximum drawdown compared to Q-learning baselines.
 						</p>
@@ -278,7 +302,7 @@
 					</div>
 					<div data-project="budget-constrained-rlrs">
 						<h3>Time-Constrained Recommendations: Reinforcement Learning Strategies for E-Commerce</h3>
-						<p>
+						<p class="research-description">
 							<b>Author(s)</b>: Sayak Chakrabarty, Souradip Pal<br>
 							This work studies time-constrained slate recommendation via reinforcement learning and reproduces experiments for e-commerce using SARSA and Q-learning. 
 							It provides dataset setup, training, evaluation, and simulation strategies for Alibaba re-ranking benchmarks.
@@ -296,7 +320,7 @@
 					</div>
 					<div data-project="mm-poe">
 						<h3>MM-PoE: Multiple Choice Reasoning via. Process of Elimination using Multi-Modal Models</h3>
-						<p>
+						<p class="research-description">
 							<b>Author(s)</b>: Sayak Chakrabarty, Souradip Pal<br>
 							This study introduces a two-step scoring system to predict answers by eliminating incorrect options in multiple-choice 
 							visual reasoning tasks. It also investigates the performance of open-source multi-modal models like GIT, BLIP etc. on 
@@ -305,7 +329,7 @@
 					</div>
 					<div class="box alt">
 						<div class="row gtr-uniform">
-							<div class="col-12"><span class="image half"><img src="images/image.png" alt="MM-PoE visual-reasoning workflow" loading="lazy" /><img src="images/cli.png" width="75%" alt="MM-PoE command-line interface" loading="lazy" /></span></div>
+							<div class="col-12"><span class="image half"><img src="images/image.png" width="75%" alt="MM-PoE visual-reasoning workflow" loading="lazy" /><img src="images/cli.png" width="75%" alt="MM-PoE command-line interface" loading="lazy" /></span></div>
 						</div>
 						<p></p>
 						<ul class="actions">
@@ -315,7 +339,7 @@
 					</div>
 					<div data-project="readmeready">
 						<h3>ReadmeReady: Free and Customizable Code Documentation with LLMs - A Fine-Tuning Approach</h3>
-						<p>
+						<p class="research-description">
 							<b>Author(s)</b>: Sayak Chakrabarty, Souradip Pal<br>
 							This research presents a large language model (LLM)-based application that developers can use as a support tool to 
 							generate basic documentation for any publicly available source code. The tool is a RAG application built on LangChain 
@@ -335,7 +359,7 @@
 					</div>
 					<div data-project="tp-chaos-generator">
 						<h3>Triple Pendulum Based Nonlinear Chaos Generator and its Applications in Cryptography</h3>
-						<p>
+						<p class="research-description">
 							<b>Author(s)</b>: Bikram Paul, Souradip Pal, Abhishek Agrawal, Dr. Gaurav Trivedi<br>
 							This research explores post-quantum cryptography methods and proposes a novel approach to
 							design an encryption scheme based on the chaotic dynamic physical system, which is derived from a mechanical model of a triple-pendulum system 
@@ -499,7 +523,7 @@
 				<div class="inner">
 					<h2>Contact</h2>
 					<p>If you have any questions, or if you just want to say hi, please feel free to send a message or
-						email me.<br> To connect with me, please make sure to follow me in any of the social media links below.</p>
+						email me. To connect with me, please make sure to follow me in any of the social media links below.</p>
 					<div class="split style1">
 						<section>
 							<form id="contact-form" method="post" action="https://formspree.io/f/xgedakyy">
@@ -531,7 +555,7 @@
 							<ul class="contact">
 								<li>
 									<h3>Location</h3>
-									Houston, TX<br />
+									San Francisco, CA<br />
 									United States</span>
 								</li>
 								<li>
